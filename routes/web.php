@@ -32,4 +32,20 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+    Route::get('/proiecte', function () {
+        return Inertia::render('Proiecte');
+})->name('proiecte');
+    Route::get('/calendar', function () {
+        return Inertia::render('Calendar');
+    })->name('calendar');
+    Route::get('/planificare', function () {
+        return Inertia::render('Planificare');
+    })->name('planificare');
+    Route::get('/facturi', function () {
+        return Inertia::render('Facturi');
+    })->name('facturi');
+    Route::get('/CRM', function () {
+        return Inertia::render('CRM');
+    })->name('CRM');
+
 });
