@@ -7,7 +7,6 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import sidebar from '@/Components/Sidebar.vue';
 
 defineProps({
     title: String,
@@ -48,46 +47,11 @@ const logout = () => {
                             </div>
 
                             <!-- Navigation Links -->
-
-                            <!-- Linkul de dashboard-->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
                             </div>
-                            <!-- Linkul de taskuri-->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('proiecte')" :active="route().current('proiecte')">
-                                    Proiecte
-                                </NavLink>
-                            </div>
-                            <!-- Linkul de calendar-->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('calendar')" :active="route().current('calendar')">
-                                    Calendar
-                                </NavLink>
-                            </div>
-                            <!-- Linkul de gannt-->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('planificare')" :active="route().current('planificare')">
-                                    Planificare
-                                </NavLink>
-                            </div>
-
-                            <!-- Linkul de facturi-->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('facturi')" :active="route().current('facturi')">
-                                    Facturi
-                                </NavLink>
-                            </div>
-
-                            <!-- Linkul de CRM-->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('CRM')" :active="route().current('CRM')">
-                                    CRM
-                                </NavLink>
-                            </div>
-
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ms-6">
@@ -323,5 +287,3 @@ const logout = () => {
         </div>
     </div>
 </template>
-
-
